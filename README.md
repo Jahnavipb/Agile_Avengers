@@ -1,3 +1,4 @@
+
 # Agile Avengers CS555 Project
 
 ## Team Members
@@ -16,6 +17,4 @@
 3. Run ` npm start `
 4. Navigate to `http://localhost:3000` in your browser to see the webpage.
 5. To stop the server, use `ctrl + c` in the terminal.
-
-
 
