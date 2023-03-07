@@ -18,3 +18,5 @@
 4. Navigate to `http://localhost:3000` in your browser to see the webpage.
 5. To stop the server, use `ctrl + c` in the terminal.
 
+## Sprint 1
+![Sprint 1 image](https://github.com/Jahnavipb/Agile_Avengers/blob/main/static/img/Sprint1.png)
