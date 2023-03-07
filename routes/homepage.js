@@ -3,8 +3,10 @@ const router = express.Router();
 //const index = require('../data/index');
 const path = require('path');
 
-
-router.use(express.static(__dirname));
+//working
+//router.use(express.static(__dirname));
+//tryerror
+router.use(express.static(path.join(__dirname,'../static')));
 
 // define the home page route
 router.get('/', (req, res) => {
