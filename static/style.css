@@ -418,3 +418,15 @@ footer {
 	margin-right: 1rem;
 }
 	
+
+/*----------------------------card-img------------------------*/
+/* .card-img-top:hover {
+
+	transition: all 0.2s ease-in-out;
+  } */
+
+  .card:hover {
+	transform: scale(1.05); /* Increase the scale of the card by 10% on hover */
+	transition: all 0.2s ease-in-out; /* Add a smooth transition effect */
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add a darker shadow on hover */
+  }
