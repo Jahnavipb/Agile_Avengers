@@ -5,6 +5,6 @@ CREATE TABLE bookdemo (
   contactNumber VARCHAR(20) NOT NULL,
   address VARCHAR(255) NOT NULL,
   scheduleDate DATE NOT NULL,
-  scheduleTime TIME NOT NULL,
+  scheduleTime VARCHAR(20) NOT NULL,
   PRIMARY KEY (id)
-);
+  );

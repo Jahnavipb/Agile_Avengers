@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cs555.dao.BookdemoDaoMapper">
+
+    <sql id="base_word">
+        id,name,email,contactNumber,address,scheduleDate,scheduleTime
+    </sql>
+    <insert id="insertBookdemo" parameterType="cs555.bean.Bookdemo">
+        insert into bookdemo(name,email,contactNumber,address,scheduleDate,scheduleTime)values (
+        #{bookdemo.name,jdbcType=VARCHAR},
+        #{bookdemo.email,jdbcType=VARCHAR},
+        #{bookdemo.contactNumber,jdbcType=VARCHAR},
+        #{bookdemo.address,jdbcType=VARCHAR},
+        #{bookdemo.scheduleDate,jdbcType=DATE},
+        #{bookdemo.scheduleTime,jdbcType=VARCHAR}
+        )
+    </insert>
+</mapper>

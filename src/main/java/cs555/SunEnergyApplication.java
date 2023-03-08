@@ -1,9 +1,10 @@
-package cs555.sun_energy;
+package cs555;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
+
 public class SunEnergyApplication {
 
 	public static void main(String[] args) {
