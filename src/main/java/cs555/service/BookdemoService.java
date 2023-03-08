@@ -1,5 +1,6 @@
 package cs555.service;
 
+import cs555.bean.Bookdemo;
 import org.springframework.stereotype.Service;
 
 /**

@@ -1,5 +1,6 @@
 package cs555.service.impl;
 
+import cs555.bean.Bookdemo;
 import cs555.dao.BookdemoDaoMapper;
 import cs555.service.BookdemoService;
 import org.springframework.beans.factory.annotation.Autowired;

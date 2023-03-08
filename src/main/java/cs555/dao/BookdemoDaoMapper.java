@@ -1,5 +1,6 @@
 package cs555.dao;
 
+import cs555.bean.Bookdemo;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 

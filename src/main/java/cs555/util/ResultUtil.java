@@ -1,5 +1,8 @@
 package cs555.util;
 
+import cs555.bean.Result;
+import cs555.bean.ResultEnum;
+
 /**
  * @Description: TODO
  * @Author: YourName
@@ -21,7 +24,7 @@ public class ResultUtil {
         return success(null);
     }
 
-    public static Result error(Integer code,String msg){
+    public static Result error(Integer code, String msg){
         Result result = new Result();
         result.setCode(code);
         result.setMsg(msg);

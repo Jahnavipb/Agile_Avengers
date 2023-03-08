@@ -1,5 +1,7 @@
 package cs555.controller;
 
+import cs555.bean.Bookdemo;
+import cs555.bean.Result;
 import cs555.service.BookdemoService;
 import cs555.util.ResultUtil;
 import org.springframework.beans.factory.annotation.Autowired;
