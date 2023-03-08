@@ -19,7 +19,45 @@ form.addEventListener('submit', function(event) {
     scheduleTime: scheduleTimeInput.value
   };
 
+
+
   console.log(data);
+
+  
+
+  this.showSuccessMessage();
 
   // add code here to send data to a server, if needed
 });
+function showSuccessMessage() {
+  // Display success message
+  console.log("Success");
+  alert("success!");
+  let res = true;
+  
+  // if(!data){
+  //   res = false;
+  // }
+  // if(!data.name){
+  //   res = false;
+  // }if(!data.address){
+  //   res = false;
+  // }
+  // if(!data.email){
+  //   res = false;
+  // }
+  // if(!data.contactNumber){
+  //   res = false;
+  // }
+  // if(!data.scheduleDate){
+  //   res = false;
+  // }
+  // if(!data.scheduleTime){
+  //   res = false;
+  // }
+  // if(res===false){
+  //   alert("Error: Please insert all the field values of the form!")
+  // }else {
+  //   alert("Success!");
+  // }
+}
