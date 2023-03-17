@@ -17,10 +17,10 @@
 3. Run ` npm start `
 4. Navigate to `http://localhost:3000` in your browser to see the webpage.
 5. To stop the server, use `ctrl + c` in the terminal.
-6. Our link: `http://52.91.157.70:3000/`
+6. Our link:  `[Website link](http://52.91.157.70:3000/)`
 
 ## Project Proposal
-Link -> https://docs.google.com/spreadsheets/d/1WTULr5mwPIZrS--vExB4EJ8zMCeYlBnUp1vjwM6uck8/edit#gid=0
+Link -> `[Project Proposal Excel Sheet](https://docs.google.com/spreadsheets/d/1WTULr5mwPIZrS--vExB4EJ8zMCeYlBnUp1vjwM6uck8/edit#gid=0)` 
 
 ## System Architecture
 ![System Architecture Image](https://github.com/Jahnavipb/Agile_Avengers/blob/main/static/img/SystemArchitecture.png)
