@@ -431,4 +431,121 @@ footer {
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add a darker shadow on hover */
   }
 
+
+  
+/*-------------------------Sidebar-----------------------------*/
+
+.sidebar{
+	z-index: 1;
+	top: 0;
+	background: #198910;
+	margin-top: 70px;
+	padding-top: 30px;
+	position: fixed;
+	left: 0;
+	width: 250px;
+	height: calc(100% - 9%);
+	transition: 0.5s;
+	transition-property: left;
+	overflow-y: auto;
+  }
+
+/*
+  .sidebar .profile_info .profile_image{
+	width: 100px;
+	height: 100px;
+	border-radius: 100px;
+	margin-bottom: 10px;
+  }
+*/
+  
+  .sidebar .profile_info h4{
+	color: #fff;
+	margin-top: 0;
+	margin-bottom: 20px;
+  }
+
+  .sidebar a{
+	color: #fff;
+	display: block;
+	width: 100%;
+	line-height: 60px;
+	text-decoration: none;
+	padding-left: 40px;
+	box-sizing: border-box;
+	transition: 0.5s;
+	transition-property: background;
+  }
+  
+  .sidebar a:hover{
+	background: #0ded8c;
+  }
+  
+  .sidebar i{
+	padding-right: 10px;
+  }
+  
+  
+
+label #sidebar_btn{
+	z-index: 1;
+	color: #fff;
+	position: fixed;
+	cursor: pointer;
+	left: 300px;
+	font-size: 20px;
+	margin: 5px 0;
+	transition: 0.5s;
+	transition-property: color;
+  }
+  
+  label #sidebar_btn:hover{
+	color: #19B3D3;
+  }
+  
+  #check:checked ~ .sidebar{
+	left: -185px;
+  }
+  
+  #check:checked ~ .sidebar a span{
+	display: none;
+  }
+  
+  #check:checked ~ .sidebar a{
+	font-size: 20px;
+	margin-left: 165px;
+	width: 100%;
+  }
+
+  /*----------------- Dashboard Images --------------------------*/
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+	float: left;
+	width: 33.33%;
+	padding: 5px;
+}
+  
+/* Clear floats after image containers */
+.row::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+.row-dashboard {
+	display: flex;
+  }
+  
+  .column-dashboard {
+	flex: 33.33%;
+	padding: 5px;
+  }
+
+  #ImSticky {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+  }
+
+
   

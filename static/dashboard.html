@@ -14,7 +14,7 @@
         <link href="style.css" rel="stylesheet" /> 
         <!-- change css path -- router is not taking css sheet-->
         
-        <title>Solaris T6</title>
+        <title>Dashboard</title>
 
     </head>
 
@@ -48,22 +48,39 @@
             </div>
         </nav>
 
-        <!-- Masthead-->
-        <header class="masthead">
-            <div class="container position-relative">
-                <div class="row justify-content-center">
-                    <div class="col-xl-6">
-                        <div class="text-center text-white">
-                            <!-- Page heading-->
-                            <h1 class="mb-5">Solar energy takes the lead!</h1>
-                            <p>Solaris is the best project management software for busy renewable installers and service providers to centralize data, manage projects, automate workflows, and engage field teams.</p>
-                            <a class="btn btn-outline-light navbar-custom" href="bookdemo.html">Book Demo</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </header>
-        
+
+    <!--sidebar start-->
+    <div class="sidebar">
+        <div class="profile_info"> 
+          <h4>Change this to stakeholder's name</h4>
+        </div>
+        <a href="dashboard.html"><i class="fas"></i><span>Dashboard</span></a>
+        <a href="#"><i class="fas"></i><span>Documentation</span></a>
+        <a href="#"><i class="fas"></i><span>Agreement</span></a>
+        <a href="#"><i class="fas"></i><span>Overview</span></a>
+        <a href="#"><i class="fas"></i><span>Chat</span></a>
+        <a href="#"><i class="fas"></i><span>My Account</span></a>
+    </div>
+    <!--sidebar end-->
+
+    <!-- Adding images -->
+
+    <div class="row-dashboard" id="ImSticky">
+        <div class="column-dashboard">
+          <img src="\static\img\solarbattery.jpg" alt="Solaris 1" style="width:100%">
+        </div>
+        <div class="column-dashboard">
+          <img src="static\img\solarbattery.jpg" alt="Solaris 2" style="width:100%">
+        </div>
+        <div class="column-dashboard">
+          <img src="static\img\solarbattery.jpg" alt="Solaris 3" style="width:100%">
+        </div>
+    </div>
+
+
+
+
+
         <!--------------- Footer ---------------------->
         <footer class="footer bg-light">
             <div class="container">
@@ -99,10 +116,14 @@
 
 
         
+        
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Core theme JS-->
-    <!-- <script src="/homepage.js"></script> -->
+    <!-- JS  -->
+    <script src="/script.js"></script> 
+
+    
+      
     
     </body>
 
