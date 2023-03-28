@@ -541,11 +541,103 @@ label #sidebar_btn{
 	padding: 5px;
   }
 
-  #ImSticky {
-	position: fixed;
-	bottom: 0;
-	right: 0;
+  .imgmain{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 200px;
+    width: 300px;
+    align-items: center;
   }
+
+  /*---------------------Chat With Us---------------*/
+.show-btn{
+    position: absolute;
+    left: 90%;
+    top: 90%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 50%;
+    text-align: center;
+    background: #4caf50;
+    color: #000;
+}
+.show-btn i{
+    margin: 15px 17px;
+    font-size: 20px;
+    color: #fff;
+}
+input[type="checkbox"]{
+    display: none;
+}
+#show:checked ~ .wrapper{
+    display: block;
+}
+.wrapper{
+    display: none;
+    width: 320px;
+    height: 400px;
+    margin: 80px auto;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 10px 5px rgba(0, 0, 0, 0.1);
+}
+h5{
+    color: #fff;
+    padding: 15px;
+    background: #4caf50;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+p{
+    font-size: 13px;
+    margin-top: 10px;
+    padding: 5px 20px;
+    text-align: center;
+}
+form{
+    margin: 10px;
+    width: auto;
+    padding: 20px 15px;
+    border-radius: 10px;
+    border: 1px solid rgba(236, 234, 234);
+    
+}
+input{
+    display: block;
+    width: 92%;
+    border: none;
+    outline: none;
+    padding: 10px;
+    color: #000;
+    margin-bottom: 10px;
+    border-radius: 12px;
+    border: 1px solid #fff;
+}
+input::placeholder{
+    color: #000;
+}
+button{
+    width: 100px;
+    padding: 8px;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    background: #4caf50;
+    border-radius: 12px;
+
+}
+input:focus{
+    border-color: #4caf50;
+}
+button:hover{
+    background: rgba(11, 237, 45, 0.5);
+
+}
 
 
   
