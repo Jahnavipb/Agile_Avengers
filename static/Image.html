@@ -2,8 +2,26 @@
 <html>
   <head>
     <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <!-- Bootstrap icons, Google fonts, Core theme CSS-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet">
+        <!-- <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css" /> -->
+        <link href="style.css" rel="stylesheet" /> 
+        <!-- change css path -- router is not taking css sheet-->
     <title>Image Uploader</title>
     <style>
+    .card {
+              width: 200px;
+              padding: 10px;
+              border: 1px solid #ddd;
+              text-align: center;
+            }
+
       body {
         background-color: #f8f8f8;
         font-family: Arial, sans-serif;
@@ -49,9 +67,42 @@
         margin-top: 30px;
         font-size: 1.2em;
       }
+      .card h3 {
+              margin-top: 10px;
+            }
     </style>
   </head>
   <body>
+    <nav class="navbar navbar-expand-lg navbar-light navbar-custom">
+        <div class="container">
+          <a class="navbar-brand" href="#">SOLARIS T6</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="homepage.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="aboutus.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="service.html">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Image.html">Image Uploader</a>
+              </li>
+              <li class="nav-item">
+                <a class="btn btn-outline-light" href="#">Book Demo</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
     <h1>Image Uploader</h1>
     <form>
       <label for="image">Choose an image to upload:</label>
