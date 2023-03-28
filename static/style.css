@@ -403,8 +403,11 @@ p {
 /*----------------------------Footer------------------------*/
 footer {
 	background-color: #f8f9fa;	
-	padding-top: 4rem;
-	padding-bottom: 4rem;
+	position:absolute;
+	bottom:0;
+	width:100%;
+	height:60px;   /* Height of the footer */
+	
 }
 .footer-icons {
 	font-size: 1.5rem;
