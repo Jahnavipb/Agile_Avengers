@@ -1,146 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-		<!-- Bootstrap icons, Google fonts, Core theme CSS-->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-		<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet">
-		<!-- <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css" /> -->
-		<link href="style.css" rel="stylesheet" /> 
-		<!-- <link rel="stylesheet" href="signup.css"> -->
-
-		<!-- change css path -- router is not taking css sheet-->
-	
-		<title>Solaris T6 SignUp Page</title>
-	</head>
-
-
-
-	<body>
-		<nav class="navbar navbar-expand-lg navbar-light navbar-custom">
-            <div class="container">
-              <a class="navbar-brand" href="#">SOLARIS T6</a>
-              <button
-                class="navbar-toggler"
-                type="button"
-                data-toggle="collapse"
-                data-target="#navbarNav"
-                aria-controls="navbarNav"
-                aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link" href="homepage.html">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="aboutus.html">About</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="service.html">Services</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact</a>
-                  </li>
-				  <li class="nav-item">
-                    <a class="nav-link" href="signup.html">Sign Up</a>
-                </li> 
-                  <li class="nav-item">
-                    <a class="btn btn-outline-light" href="bookdemo.html">Book Demo</a>
-                  </li>
-                </ul>
-              </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <!-- Add bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center my-5">Sign Up</h1>
+        <form id="signup-form">
+            <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" required>
             </div>
-        </nav>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="email" required>
+                <div class="invalid-feedback">Invalid email format!</div>
+            </div>
+            <div class="mb-3">
+                <label for="phone" class="form-label">Phone</label>
+                <input type="tel" class="form-control" id="phone" required>
+                <div class="invalid-feedback">Invalid phone number!</div>
+            </div>
+            <div class="mb-3">
+                <label for="address" class="form-label">Address</label>
+                <input type="text" class="form-control" id="address" required>
+            </div>
+            <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" class="form-control" id="password" required>
+            </div>
+            <div class="mb-3">
+                <label for="retype-password" class="form-label">Retype Password</label>
+                <input type="password" class="form-control" id="retype-password" required>
+                <div class="invalid-feedback">Passwords do not match!</div>
+            </div>
+            <button type="submit" class="btn btn-primary" id="submit-button" disabled>Submit</button>
+        </form>
+    </div>
 
-    	<div class="container mt-5" style="margin-bottom: 12px;">
-        	<h2 class="text-center mb-4" style="text-align: center;">Sign Up</h2>
-        	<form id="signup-form">
-				<label for="full_name">Name</label>
-				<input type="text" id="full_name" name="full_name" placeholder="Your name..">
-				<span class="error-message"></span>
-	
-				<label for="email">Email</label>
-				<input type="email" id="email" name="email" placeholder="Your email..">
-				<span class="error-message"></span>
-	
-				<label for="phone_number">Phone</label>
-				<input type="tel" id="phone_number" name="phone_number" placeholder="Your phone number..">
-				<span class="error-message"></span>
-	
-				<label for="address">Address</label>
-				<input type="text" id="address" name="address" placeholder="Your address..">
-				<span class="error-message"></span>
-	
-				<label for="password">Password</label>
-				<input type="password" id="password" name="password" placeholder="Your password..">
-				<span class="error-message"></span>
-	
-				<label for="retype_password">Retype Password</label>
-				<input type="password" id="retype_password" name="retype_password" placeholder="Retype your password..">
-				<span class="error-message"></span>
-	
-				<button type="submit" class="submit" disabled>Submit</button>
-
-			</form>
-			
-		
-    	</div>
-
-		        <!--------------- Footer ---------------------->
-				<footer class="footer bg-light">
-					<div class="container">
-						<div class="row">
-							<div class="col-lg-6 h-100 text-lg-end my-auto">
-								<ul class="list-inline mb-0">
-									<li class="list-inline-item me-4">
-										<a href="#"><i class="bi-facebook fs-3"></i></a>
-									</li>
-									<li class="list-inline-item me-4">
-										<a href="#"><i class="bi-twitter fs-3"></i></a>
-									</li>
-									<li class="list-inline-item">
-										<a href="#"><i class="bi-instagram fs-3"></i></a>
-									</li>
-								</ul>
-							</div>
-							<div class="col-lg-6 h-100 text-lg-start my-auto mx-auto">
-								<ul class="list-inline mb-2">
-									<li class="list-inline-item"><a href="aboutus.html">About</a></li>
-									<li class="list-inline-item">⋅</li>
-									<li class="list-inline-item"><a href="contact.html">Contact</a></li>
-									<li class="list-inline-item">⋅</li>
-									<li class="list-inline-item"><a href="#!">Terms of Use</a></li>
-									<li class="list-inline-item">⋅</li>
-									<li class="list-inline-item"><a href="#!">Privacy Policy</a></li>
-								</ul>
-								<p class="text-muted small mb-4 mb-lg-0">&copy; Your Website 2023. All Rights Reserved.</p>
-							</div>
-						</div>
-					</div>
-				</footer>
-		
-		
-				
-			<!-- Bootstrap core JS-->
-			<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-			<!-- Core theme JS-->
-			<!-- <script src="/homepage.js"></script> -->
-			<!-- Add this line right before the closing </body> tag -->
-			<script src="https://cdn.sendgrid.com/sdks/browser/1.0.0/sendgrid.min.js"></script>
-  			<script>
-    			// Set SendGrid API key
-    			window.sgMail = SendGrid('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');
-  			</script>
-			<script type="module" src="signup.js"></script>
-
-	</body>
+    <!-- Add bootstrap and custom JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+    <script src="signup.js"></script>
+</body>
 </html>
