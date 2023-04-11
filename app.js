@@ -1,6 +1,6 @@
 // Setting up server
 
-var startTime = performance.now();
+//var startTime = performance.now();
 
 const express = require('express');
 const app = express();
@@ -34,5 +34,5 @@ const main = async () => {
 
 main();
 
-var endTime = performance.now();
-console.log(`Call to do Something took ${endTime - startTime} milliseconds`);
+//var endTime = performance.now();
+//console.log(`Call to do Something took ${endTime - startTime} milliseconds`);
