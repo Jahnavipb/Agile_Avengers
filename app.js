@@ -32,7 +32,7 @@ const main = async () => {
   console.log('Done!'); 
 };
 
-ain();
+main();
 
 var endTime = performance.now();
 console.log(`Call to do Something took ${endTime - startTime} milliseconds`);
