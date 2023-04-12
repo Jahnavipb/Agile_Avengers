@@ -22,6 +22,23 @@ test('check if the form elements are present', () => {
 
 test('form submit event', () => {
   const form = document.querySelector('#signup-form');
+  const emailInput = getByLabelText(form, 'Email');
+  const passwordInput = getByLabelText(form, 'Password');
+  const submitButton = getByText(form, 'Submit');
+
+  // Mock the form submission event handler
+  const handleSubmit = jest.fn((e) => e.preventDefault());
+  form.addEventListener('submit', handleSubmit);
+
+  fireEvent.change(emailInput, { target: { value: 'user@example.com' } });
+  fireEvent.change(passwordInput, { target: { value: 'ValidPass123' } });
+
+  // Expect the submit button to be enabled after entering valid input
+  expect(submitButton).not.toBeDisabled();
+
+  // Trigger form submission
   fireEvent.submit(form);
-  // Add your expectations related to form submission here
+
+  // Expect the form submission event handler to be called
+  expect(handleSubmit).toHaveBeenCalledTimes(1);
 });
