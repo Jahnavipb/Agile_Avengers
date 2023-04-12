@@ -19,9 +19,24 @@
 <body>
     <!-- Your previous navbar code -->
 
+
+
     <div class="container mt-5" style="margin-bottom: 12px;">
         <h2 class="text-center mb-4" style="text-align: center;">Sign In</h2>
         <form id="signin-form" style="max-width: 600px; margin: 0 auto; display: flex; flex-direction: column;">
+            
+            <div class="form-group">
+                <label for="user-type">Select User Type:</label>
+                <select class="form-control" id="user-type" required>
+                    <option value="normal" selected>Normal User</option>
+                    <option value="sales">Sales</option>
+                    <option value="management">Management</option>
+                    <option value="crew">Crew</option>
+                </select>
+                <small class="text-danger d-none" id="user-type-error">Please select a user type.</small>
+            </div>
+
+
             <label for="email" style="display: block; margin-top: 1em;">Email</label>
             <input type="email" id="email" name="email" placeholder="Your email.." style="width: 100%; margin-bottom: 0.5em;">
 

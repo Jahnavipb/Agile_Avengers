@@ -18,6 +18,9 @@
 4. Navigate to `http://localhost:3000` in your browser to see the webpage.
 5. To stop the server, use `ctrl + c` in the terminal.
 6. Our link:  [Website link](http://52.91.157.70:3000/)
+7. Note: One of the main dependancy for the project is mongoDB, which is the main DB for storing data.
+   To run the application use ` npm install mongodb ` before starting the application.
+8. Application is hosted on a ubuntu server which is deployed in Amazon Web Serives.
 
 ## Project Proposal
 Link -> [Project Proposal Excel Sheet](https://docs.google.com/spreadsheets/d/1WTULr5mwPIZrS--vExB4EJ8zMCeYlBnUp1vjwM6uck8/edit#gid=0)
