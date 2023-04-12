@@ -11,6 +11,18 @@
     <div class="container">
         <h1 class="text-center my-5">Sign Up</h1>
         <form id="signup-form">
+
+			<div class="form-group">
+                <label for="user-type">Select User Type:</label>
+                <select class="form-control" id="user-type" required>
+                    <option value="normal" selected>Normal User</option>
+                    <option value="sales">Sales</option>
+                    <option value="management">Management</option>
+                    <option value="crew">Crew</option>
+                </select>
+                <small class="text-danger d-none" id="user-type-error">Please select a user type.</small>
+            </div>
+
             <div class="mb-3">
                 <label for="name" class="form-label">Name</label>
                 <input type="text" class="form-control" id="name" required>
