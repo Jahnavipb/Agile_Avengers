@@ -14,7 +14,13 @@ const main = async () => {
     }
 
 
-    
+     try{
+        let demo2 = await bookdemo.createDemo("SinduPabba", "sindupabba22@gmail.com", "5513447595", "19 Hancock Ave", "4/01/2023", "20:45");
+        console.log('Your reference ID is : ' + demo2);
+      } catch(e) {
+      console.log(e);
+    }
+
 
 
 
