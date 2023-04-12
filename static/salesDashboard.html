@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <title>Sales Dashboard</title>
+  <style>
+    .sidenav {
+      height: 100%;
+      width: 200px;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: #111;
+      overflow-x: hidden;
+      padding-top: 20px;
+    }
+
+    .sidenav a {
+      padding: 8px 8px 8px 16px;
+      text-decoration: none;
+      font-size: 18px;
+      color: #818181;
+      display: block;
+    }
+
+    .sidenav a:hover {
+      color: #f1f1f1;
+    }
+
+    .content {
+      display: none;
+      margin-left: 200px;
+      padding: 15px;
+    }
+  </style>
+</head>
+<body>
+  <div class="sidenav">
+    <a href="">Welcome Sushil!</a>
+    <a href="user chat.html" onclick="showContent('chat')">Chat</a>
+    <a href="#" onclick="showContent('send-agreement')">Send Agreement</a>
+    <a href="#" onclick="showContent('client-information')">Client Information</a>
+    <a href="#" onclick="showContent('management')">Management</a>
+  </div>
+  <div style="text-align: center;">
+    <h1>
+        Welcome to Sales Dashboard!
+    </h1>
+    You currently don't have any client's assigned!
+  </div>
+
+  <!-- Add your content divs here -->
+  <div id="chat" class="content">
+    <h2>Chat</h2>
+    <p>Chat functionality will be implemented here.</p>
+  </div>
+
+  <div id="send-agreement" class="content">
+    <h2>Send Agreement</h2>
+    <p>Agreement sending functionality will be implemented here.</p>
+  </div>
+
+  <div id="client-information" class="content">
+    <h2>Client Information</h2>
+    <p>Client information will be displayed here.</p>
+  </div>
+
+  <div id="management" class="content">
+    <h2>Management</h2>
+    <p>Management communication functionality will be implemented here.</p>
+  </div>
+
+  <script src="salesDashboard.js"></script>
+</body>
+</html>
