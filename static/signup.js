@@ -1,4 +1,5 @@
 const form = document.getElementById("signup-form");
+const userType = document.getElementById('user-type').value;
 const email = document.getElementById("email");
 const phone = document.getElementById("phone");
 const password = document.getElementById("password");
@@ -80,6 +81,7 @@ form.addEventListener("submit", (event) => {
 
   // Collect form field values
   const formData = {
+    userType: userType,
     name: document.getElementById("name").value,
     email: document.getElementById("email").value,
     phone: document.getElementById("phone").value,
