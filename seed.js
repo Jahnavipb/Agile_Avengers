@@ -15,11 +15,19 @@ const main = async () => {
 
 
      try{
-        let demo2 = await bookdemo.createDemo("SinduPabba", "sindupabba22@gmail.com", "5513447595", "19 Hancock Ave", "4/01/2023", "20:45");
+        let demo2 = await bookdemo.createDemo("SinduPabba", "sindupabba22@gmail.com", "5513447595", "19 Hancock Ave", "4/01/2023", "20:00");
         console.log('Your reference ID is : ' + demo2);
       } catch(e) {
       console.log(e);
     }
+    
+     try{
+        let demo3 = await bookdemo.createDemo("James", "james@gmail.com", "5513447777", "59 Ogden Ave", "4/21/2023", "15:30");
+        console.log('Your reference ID is : ' + demo3);
+      } catch(e) {
+      console.log(e);
+    }
+
 
 
 
