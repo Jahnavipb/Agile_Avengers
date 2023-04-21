@@ -15,5 +15,7 @@ const getCollectionFn = (collection) => {
 
 module.exports = {
     // add or change collections as required 
-    bookdemo: getCollectionFn('bookdemo')
+    bookdemo: getCollectionFn('bookdemo'),
+    signin: getCollectionFn('signin'),
+    signup: getCollectionFn('signup')
 };

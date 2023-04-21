@@ -71,10 +71,10 @@ retypePassword.addEventListener("input", () => {
   updateSubmitButtonState();
 });
 
-form.addEventListener("submit", (event) => {
-  event.preventDefault();
-  console.log("Form submitted");
-});
+// form.addEventListener("submit", (event) => {
+//   event.preventDefault();
+//   console.log("Form submitted");
+// });
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();
