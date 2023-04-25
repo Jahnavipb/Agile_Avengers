@@ -1,4 +1,5 @@
 function uploadImage() {
+    // function to uplad image
     const fileInput = document.getElementById("image");
     const file = fileInput.files[0];
     const status = document.getElementById("status");
