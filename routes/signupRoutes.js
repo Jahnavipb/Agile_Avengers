@@ -1,8 +1,19 @@
-const express = require('express');
-const router = express.Router();
-const signup = require('../static/signup');
+//import {Router} from 'express';
+// import { Router, request } from "express";
+// const router = Router();
 
-// POST route to handle user signups
-router.post('/signup', signup.signup);
+// router.route('/').post(async (res,req)=>
+// {
+//     console.log("Signup is called")
+// })
+// export default router;
+
+
+const express = require("express");
+const router = express.Router();
+
+router.route('/').post(async (req, res) => {
+    console.log("Signup is called");
+});
 
 module.exports = router;

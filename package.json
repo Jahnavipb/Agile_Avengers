@@ -22,11 +22,15 @@
   "homepage": "https://github.com/Jahnavipb/Agile_Avengers#readme",
   "dependencies": {
     "@sendgrid/mail": "^7.7.0",
+    "mongodb": "^5.2.0",
     "axios": "^1.3.4",
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.6",
     "express": "^4.18.2",
-    "express-handlebars": "^7.0.1",
-    "handlebars": "^4.7.7",
-    "mongodb": "^5.2.0"
+    "express-handlebars": "^7.0.4",
+    "express-session": "^1.17.3",
+    "handlebars": "^4.7.7"
+
   },
   "devDependencies": {
     "@testing-library/dom": "^9.2.0",
