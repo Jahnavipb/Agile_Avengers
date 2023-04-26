@@ -5,6 +5,7 @@ function uploadImage() {
     const status = document.getElementById("status");
   
     if (!file) {
+        // check the file
       status.textContent = "Error: No file selected.";
       return;
     }
