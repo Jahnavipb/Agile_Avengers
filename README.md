@@ -37,3 +37,6 @@ Link -> [Project Proposal Excel Sheet](https://docs.google.com/spreadsheets/d/1W
 
 ## Sprint 3
 ![Sprint 3 trello Image](https://github.com/Jahnavipb/Agile_Avengers/blob/main/static/img/Sprint3.png)
+
+## Sprint 4
+![Sprint 4 trello Image](https://github.com/Jahnavipb/Agile_Avengers/blob/main/static/img/Sprint4.png)
