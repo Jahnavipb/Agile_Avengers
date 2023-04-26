@@ -31,7 +31,7 @@ const main = async () => {
 
 
     try{
-      let user1 = await signup.createUser('Normal',"Charlie", "charlie@gmail.com", 'Password',"5513560777" );
+      let user1 = await signup.createUser('Normal',"Frank", "Frank@gmail.com", 'Password',"6348721931" );
       console.log('Your reference ID is : ' + user1);
     } catch(e) {
     console.log(e);
