@@ -6,11 +6,11 @@ const express = require('express');
 const app = express();
 const configRoutes = require('./routes');
 const bookdemo = require('./data/bookdemo');
+const signup = require('./data/signupData');
 const connection = require('./config/mongoConnection');
 
 app.use(express.json());
 configRoutes(app);
-
 
 app.listen(3000, () => {
   console.log("We've now got a server!");
@@ -42,11 +42,16 @@ const main = async () => {
   console.log(e);
   }
 
+  try{
+    let user1 = await signup.createUser('Normal',"Charlie", "charlie@gmail.com", 'Password',"5513560777" );
+    console.log('Your User ID is : ' + user1);
+  } catch(e) {
+  console.log(e);
+  }
+
+
   await connection.closeConnection();
   console.log('Done!'); 
 };
 
 main();
-
-//var endTime = performance.now();
-//console.log(`Call to do Something took ${endTime - startTime} milliseconds`);
