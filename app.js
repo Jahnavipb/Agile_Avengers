@@ -1,8 +1,6 @@
 // Setup server, session and middleware here.
 
 
-
-//referred professor's lecture code 8, my lab8 and professor's lecture code 10
 import express from 'express';
 const app = express();
 import cookieParser from 'cookie-parser';
@@ -31,7 +29,6 @@ app.use(express.urlencoded({extended: true}));
 app.engine('handlebars', exphbs.engine({defaultLayout: 'main'}));
 app.set('view engine', 'handlebars');
 
-//took reference from lab10 ruberics
 app.use(
     session({
         name: 'AuthCookie',
