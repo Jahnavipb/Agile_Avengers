@@ -25,6 +25,9 @@
 ## Project Proposal
 Link -> [Project Proposal Excel Sheet](https://docs.google.com/spreadsheets/d/1WTULr5mwPIZrS--vExB4EJ8zMCeYlBnUp1vjwM6uck8/edit#gid=0)
 
+## Project Sprint Updates
+[Sprint Updates Sheet](https://docs.google.com/spreadsheets/d/1WTULr5mwPIZrS--vExB4EJ8zMCeYlBnUp1vjwM6uck8/edit#gid=0)
+
 ## System Architecture
 ![System Architecture Image](https://github.com/Jahnavipb/Agile_Avengers/blob/main/static/img/SystemArchitecture.png)
 
