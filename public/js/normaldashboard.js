@@ -6,12 +6,12 @@ function showContent(id) {
     }
   
     document.getElementById(id).style.display = "block";
-  }
+}
   
-  // Initialize the page with the salesperson content displayed
-  showContent("salesperson");
+// Initialize the page with the salesperson content displayed
+showContent("salesperson");
   
-  function calculateTotalCost() {
+function calculateTotalCost() {
     const checkboxes = document.querySelectorAll('#priceForm .form-check-input');
     let totalCost = 0;
     checkboxes.forEach(checkbox => {
@@ -20,8 +20,13 @@ function showContent(id) {
       }
     });
     document.getElementById('total-cost').innerText = totalCost;
-  }
+}
+
+// function proceedContract() {
+
+// }
   
-  document.querySelectorAll('#priceForm .form-check-input').forEach(checkbox => {
-    checkbox.addEventListener('change', calculateTotalCost);
-  });
+document.querySelectorAll('#priceForm .form-check-input').forEach(checkbox => {
+  checkbox.addEventListener('change', calculateTotalCost);
+});
+

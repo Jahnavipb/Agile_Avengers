@@ -7,6 +7,8 @@ import middlewareMethods from '../middleware.js';
 import helpers from '../helpers.js';
 import normalUsers from '../data/normalUsers.js';
 import feedback from '../data/feedback.js';
+import fetch from "node-fetch";
+
 
 
 //refered https://www.youtube.com/watch?v=TDe7DRYK8vU this youtube video for passing the middlewear [timestamp - 26:30 ish ]
@@ -187,9 +189,9 @@ router
           role: loginUser.role,
         };
   
-        //redirecting based on the loginUser.role
-
+  
         
+        //redirecting based on the loginUser.role
         
       }else{
         // console.log("scout user checkUser method will be triggered");
@@ -246,3 +248,13 @@ router.route('/logout').get(middlewareMethods.logoutMiddleware, async (req, res)
 });
 
 export default router;
+
+
+      
+// const response = await fetch("/add-to-mongo", {
+//   method: "POST",
+//   headers: { "Content-Type": "application/json;charset=UTF-8" },
+//   body: JSON.stringify({ value: getTotal() }),
+// });
+// const data = await response.json();
+// console.log(data);

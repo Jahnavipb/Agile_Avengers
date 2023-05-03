@@ -1657,7 +1657,7 @@ function validPhoneNumber(phoneNumber) {
     if (!phoneNumberRegex.test(phoneNumber)) {
       throw `Error: Phone Number ${phoneNumber} Entered by you is not valid! Phone number should be a 10 digit number`;
     }
-  }
+}
   
 
 function checkValidPassword(password){
@@ -1738,6 +1738,6 @@ function checkValiduserType(userType){
         throw `The User Type - ${userType} you entered is invalid. Please make sure you select either "normal user" or "sales" or "management" or "crew" User Type only!!`
     }
     console.log(`${userType} is a valid user type`);
-  };
+};
 
 
