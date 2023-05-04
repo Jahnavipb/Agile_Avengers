@@ -1,57 +1,62 @@
-// Setting up server
+// Setup server, session and middleware here.
 
-//var startTime = performance.now();
 
-const express = require('express');
+
+//referred professor's lecture code 8, my lab8 and professor's lecture code 10
+import express from 'express';
 const app = express();
-const configRoutes = require('./routes');
-const bookdemo = require('./data/bookdemo');
-const signup = require('./data/signupData');
-const connection = require('./config/mongoConnection');
+import cookieParser from 'cookie-parser';
+import session from 'express-session';
+import configRoutes from './routes/index.js';
+import { solarSelection } from './config/mongoCollections.js';
+
+import {fileURLToPath} from 'url';
+import {dirname} from 'path';
+import exphbs from 'express-handlebars';
+import middlewareMethods from './middleware.js';
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
+
+const staticDir = express.static(__dirname + '/public');
+
+app.use('/public', staticDir);
+
+app.use(cookieParser());
 
 app.use(express.json());
+
+app.use(express.urlencoded({extended: true}));
+// app.use(rewriteUnsupportedBrowserMethods);
+
+
+app.engine('handlebars', exphbs.engine({defaultLayout: 'main'}));
+app.set('view engine', 'handlebars');
+
+
+//took reference from lab10 ruberics
+app.use(
+    session({
+        name: 'AuthCookie',
+        secret: 'some secret string!',
+        resave: false,
+        saveUninitialized: false
+    })
+  );
+
+
+app.use(middlewareMethods.loggingMiddleware);
+
+
+
+//console.log("Before app is called");
+
 configRoutes(app);
+
+//console.log("After app is called");
 
 app.listen(3000, () => {
   console.log("We've now got a server!");
   console.log('Your routes will be running on http://localhost:3000');
 });
 
-const main = async () => {
-  const db = await connection.dbConnection();
-  await db.dropDatabase();
 
-  try{
-    let demo1 = await bookdemo.createDemo("Jahnavi", "jahnavi@gmail.com", "6462886335", "186 Kensington Avenue", "4/12/2023", "14:30");
-    console.log('Your reference ID is : ' + demo1);
-  } catch(e) {
-  console.log(e);
-  }
-
-  try{
-    let demo1 = await bookdemo.createDemo("James", "james@gmail.com", "6462000099", "382 Ogden Avenue", "4/15/2023", "10:30");
-    console.log('Your reference ID is : ' + demo1);
-  } catch(e) {
-  console.log(e);
-  }
-
-  try{
-    let demo1 = await bookdemo.createDemo("Jhones", "jhones@gmail.com", "5516566390", "786 Lincoln Street", "5/1/2023", "09:00");
-    console.log('Your reference ID is : ' + demo1);
-  } catch(e) {
-  console.log(e);
-  }
-
-  try{
-    let user1 = await signup.createUser('Normal',"Charlie", "charlie@gmail.com", 'Password',"5513560777" );
-    console.log('Your User ID is : ' + user1);
-  } catch(e) {
-  console.log(e);
-  }
-
-
-  await connection.closeConnection();
-  console.log('Done!'); 
-};
-
-main();

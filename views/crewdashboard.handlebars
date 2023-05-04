@@ -1,0 +1,105 @@
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <title>User Dashboard</title>
+  <style>
+    .content {
+  display: none;
+  margin-left: 200px;
+  padding: 15px;
+  z-index: 2;
+  position: relative;
+}
+
+    .sidenav {
+      height: 100%;
+      width: 200px;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: #111;
+      overflow-x: hidden;
+      padding-top: 20px;
+    }
+
+    .sidenav a {
+      padding: 8px 8px 8px 16px;
+      text-decoration: none;
+      font-size: 18px;
+      color: #818181;
+      display: block;
+    }
+
+    .sidenav a:hover {
+      color: #f1f1f1;
+    }
+
+    .content {
+      display: none;
+      margin-left: 200px;
+      padding: 15px;
+    }
+
+    /* Add the custom CSS style here */
+    .custom-checkbox input[type="checkbox"] {
+      opacity: 1;
+    }
+  </style>
+
+  <nav class="navbar navbar-expand-lg navbar-light navbar-custom">
+    <div class="container">
+      <a class="navbar-brand" href="#">SOLARIS T6</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="/crewdashboard">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/aboutus">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/service">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/contact">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/userchat">Chat</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/logout">logout</a>
+          </li>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+</head>
+<body>
+  <div class="sidenav">
+    <a href="/crewdashboard">Welcome {{username}}!</a>
+    <a href="#" onclick="showContent('salesperson')">Crew</a>
+    <a href="/viewInspections" >View Inspections</a>
+    <a href="#" onclick="showContent('installation-progress')">View Manager</a>
+  </div>
+
+  <!-- Add your content divs here -->
+  {{!-- <div id="salesperson" class="content">
+    <h2>Salesperson</h2>
+    <p>Your assigned salesperson is John Doe.</p>
+    <p>Email: john.doe@example.com</p>
+    <p>Phone: (123) 456-7890</p>
+  </div> --}}
+
+
+  <script src="/public/js/salesdashboard.js"></script>
+</body>
+
+

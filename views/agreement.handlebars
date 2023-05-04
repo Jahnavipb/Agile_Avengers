@@ -1,0 +1,105 @@
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <title>User Dashboard</title>
+  <style>
+    .content {
+  display: none;
+  margin-left: 200px;
+  padding: 15px;
+  z-index: 2;
+  position: relative;
+}
+
+    .sidenav {
+      height: 100%;
+      width: 200px;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: #111;
+      overflow-x: hidden;
+      padding-top: 20px;
+    }
+
+    .sidenav a {
+      padding: 8px 8px 8px 16px;
+      text-decoration: none;
+      font-size: 18px;
+      color: #818181;
+      display: block;
+    }
+
+    .sidenav a:hover {
+      color: #f1f1f1;
+    }
+
+    .content {
+      display: none;
+      margin-left: 200px;
+      padding: 15px;
+    }
+
+    /* Add the custom CSS style here */
+    .custom-checkbox input[type="checkbox"] {
+      opacity: 1;
+    }
+  </style>
+
+  <nav class="navbar navbar-expand-lg navbar-light navbar-custom">
+    <div class="container">
+      <a class="navbar-brand" href="#">SOLARIS T6</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="/normaldashboard">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/aboutus">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/service">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/contact">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/Image">Image Uploader</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/userchat">Chat</a>
+          </li>
+          </li>
+          <li class="nav-item">
+            <a class="btn btn-outline-light" href="/bookdemo">Book Demo</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+</head>
+
+<h2>Contract Agreement</h2>
+<p>Please read the following contract agreement:</p>
+<textarea readonly rows="10" cols="50">
+Solar Application Contract Agreement
+
+1. By signing this agreement, you ("User") agree to accept the pricing for the solar installation service provided by our company ("Company").
+2. You authorize the Company to store and use the data you have provided in the Company's database for the purposes of fulfilling the solar installation service.
+3. This agreement is governed by the laws of the United States.
+
+Please read the terms carefully before signing
+</textarea>
+<a href="/recordagreement" class="btn btn-primary">I agree</a>
+
+
+
+
+<script src="/public/js/normaldashboard.js"></script>
+</body>

@@ -1,0 +1,60 @@
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <title>User Dashboard</title>
+  <style>
+    .content {
+  display: none;
+  margin-left: 200px;
+  padding: 15px;
+  z-index: 2;
+  position: relative;
+}
+
+    .sidenav {
+      height: 100%;
+      width: 200px;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: #111;
+      overflow-x: hidden;
+      padding-top: 20px;
+    }
+
+    .sidenav a {
+      padding: 8px 8px 8px 16px;
+      text-decoration: none;
+      font-size: 18px;
+      color: #818181;
+      display: block;
+    }
+
+    .sidenav a:hover {
+      color: #f1f1f1;
+    }
+
+    .content {
+      display: none;
+      margin-left: 200px;
+      padding: 15px;
+    }
+
+    /* Add the custom CSS style here */
+    .custom-checkbox input[type="checkbox"] {
+      opacity: 1;
+    }
+  </style>
+
+  {{{navBar}}}
+
+</head>
+<div class="pageTitle">
+    <p>
+        {{title}}
+    </p>
+</div>
+
+{{{success}}}

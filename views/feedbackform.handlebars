@@ -1,0 +1,284 @@
+
+<head>
+    <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <!-- Bootstrap icons, Google fonts, Core theme CSS-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet">
+        <!-- <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css" /> -->
+        <link href="/public/css/main.css" rel="stylesheet" /> 
+
+        <style>
+        
+
+        form {
+            background-color: #ffffff;
+            padding: 2rem;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+            width: 100%;
+            max-width: 500px;
+        }
+
+        h1 {
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        input,
+        textarea {
+            display: block;
+            width: 100%;
+            margin-bottom: 1rem;
+            padding: 0.5rem;
+            border: 1px solid #e0e0e0;
+            border-radius: 3px;
+            outline: none;
+        }
+
+        input:focus,
+        textarea:focus {
+            border-color: #007bff;
+            box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+        }
+
+        button {
+            display: block;
+            width: 100%;
+            padding: 0.5rem;
+            background-color: #007bff;
+            color: #ffffff;
+            font-weight: bold;
+            text-transform: uppercase;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            outline: none;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        .is-invalid {
+            border-color: #dc3545;
+        }
+
+        .is-invalid + .invalid-feedback {
+            color: #dc3545;
+            display: block;
+        }
+        .required:after {
+            content: " *";
+            color: red;
+        }
+
+    </style>
+    
+    
+  </head>
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light navbar-custom">
+        <div class="container">
+          <a class="navbar-brand" href="#">SOLARIS T6</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="/">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/aboutus">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/service">Services</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/contactus">Contact</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/Image">Image Uploader</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/userchat">Chat</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/signup">Sign Up</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/login">Sign In</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/feedbackform">Give Feedback</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="btn btn-outline-light" href="/bookdemo">Book Demo</a>
+                  </li>
+                </ul>
+              </div>
+        </div>
+      </nav>
+
+    <!-- Page Header -->
+    <header  >
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <div class="page-heading">
+              <h1 style="text-align: center;">Feedback Form</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div>
+        {{{success}}}
+        {{{error}}}
+    </div>
+
+    <!-- Main Content -->
+    <div>
+
+         <div style="display: flex; justify-content: center; align-items: center;">
+            <form id="feedbackForm" method="post" style="font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            align-items: center;">
+            <label for="navigation">1. On a scale of 1-5, how easy was it to navigate the website?</label>
+            <select id="navigation" name="navigation">
+                <option value="1" selected>1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+
+            <br>
+
+            <label for="findInfo">2. Were you able to find the information you were looking for easily?</label>
+            <select id="findInfo" name="findInfo">
+                <option value="yes" selected>Yes</option>
+                <option value="no">No</option>
+            </select>
+
+            <br>
+
+            <label for="encounterIssues">3. Did you encounter any issues while browsing the website?</label>
+            <select id="encounterIssues" name="encounterIssues">
+                <option value="yes" selected>Yes</option>
+                <option value="no">No</option>
+            </select>
+
+            <br>
+
+            <label for="bookingSatisfaction">4. Were you satisfied with the booking process?</label>
+            <select id="bookingSatisfaction" name="bookingSatisfaction">
+                <option value="yes" selected>Yes</option>
+                <option value="no">No</option>
+            </select>
+
+            <br>
+
+            <label for="bookingExperience">5. On a scale of 1-5, how would you rate the overall booking experience?</label>
+            <select id="bookingExperience" name="bookingExperience">
+                <option value="1" selected>1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+
+            <br>
+
+            <label for="websiteSatisfaction">6. On a scale of 1-5, how satisfied are you with the overall website?</label>
+            <select id="websiteSatisfaction" name="websiteSatisfaction">
+                <option value="1" selected>1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+
+            <br>
+
+            <label for="recommendation">7. Would you recommend this website to a friend or family member?</label>
+            <select id="recommendation" name="recommendation">
+                <option value="yes" selected>Yes</option>
+                <option value="no">No</option>
+            </select>
+
+            <br>
+
+            <label class="required" for="suggestions">8. Do you have any suggestions for how we can improve the website?</label>
+            <textarea id="suggestions" name="suggestions"></textarea>
+
+            <br>
+
+            <input type="submit" value="Submit">
+        </form>
+         </div>   
+
+        
+    </div>
+
+    
+
+    <!-- Footer -->
+    <div class="footer bg-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 h-100 text-lg-end my-auto">
+                        <ul class="list-inline mb-0">
+                            <li class="list-inline-item me-4">
+                                <a href="#"><i class="bi-facebook fs-3"></i></a>
+                            </li>
+                            <li class="list-inline-item me-4">
+                                <a href="#"><i class="bi-twitter fs-3"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#"><i class="bi-instagram fs-3"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 h-100 text-lg-start my-auto mx-auto">
+                        <ul class="list-inline mb-2">
+                            <li class="list-inline-item"><a href="/aboutus">About</a></li>
+                            <li class="list-inline-item">⋅</li>
+                            <li class="list-inline-item"><a href="/contact">Contact</a></li>
+                            <li class="list-inline-item">⋅</li>
+                            <li class="list-inline-item"><a href="#!">Terms of Use</a></li>
+                            <li class="list-inline-item">⋅</li>
+                            <li class="list-inline-item"><a href="#!">Privacy Policy</a></li>
+                        </ul>
+                        <p class="text-muted small mb-4 mb-lg-0">&copy; Solaris Website 2023. All Rights Reserved.</p>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="/public/js/feedback.js"></script>
+</body>

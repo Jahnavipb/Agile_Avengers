@@ -1,16 +1,14 @@
-const homepage = require('./homepage.js');
-//const signin = require('./signin.js');
-const signupRoutes = require('./signupRoutes.js');
-//const bookDemo = require('./bookdemo.js');
-//import signupRoutes from './signupRoutes.js';
+//Here you will import route files and export the constructor method as shown in lecture code and worked in previous labs.
+
+//From professor's lectore code 10 
+import authRoutes from './auth_routes.js';
 
 const constructorMethod = (app) => {
-   app.use('/', homepage);  
-    //app.use('/signup',signupRoutes);
-   // app.use('/signin', signin); 
-   // app.use('/signup', signup); 
-   // app.use('/bookdemo', bookDemo);
+  app.use('/', authRoutes);
 
+  app.use('*', (req, res) => {
+    res.sendStatus(404);
+  });
 };
 
-module.exports = constructorMethod;
+export default constructorMethod;
