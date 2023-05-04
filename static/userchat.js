@@ -10,7 +10,7 @@ $(document).ready(function() {
       }
     });
   
-    // Sales chat functionality
+    // Sales chat functionalitys
     $("#sales-send-button").click(function() {
       var message = $("#sales-message-input").val();
       if (message != "") {
